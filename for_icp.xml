@@ -1,0 +1,8 @@
+<uwsgi>
+   <socket>127.0.0.1:8997</socket> <!-- 内部端口，自定义 -->
+   <chdir>/home/projects/for_icp/</chdir> <!-- 项目路径 -->
+   <module>for_icp.wsgi</module>  <!-- for_icp为wsgi.py所在目录名-->
+   <processes>4</processes> <!-- 进程数 -->
+   <daemonize>uwsgi.log</daemonize> <!-- 日志文件 -->
+   <pidfile>for_icp.pid</pidfile>    <!--for_icp.pid文件可以用来记录uwsgi进程的pid，以后可使用uwsgi --stop myblog.pid命令来停止这些pid的进程-->
+</uwsgi>
