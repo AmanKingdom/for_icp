@@ -1,459 +1,388 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="renderer" content="webkit" />
-	<meta name="force-rendering" content="webkit" />
-	<title>枫叶博客 - 专注于互联网技术原创的独立博客！</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <title>枫叶博客</title>
     <meta name="keywords" content="枫叶,博客,模板,收录,攻防,网络,安全,运维,源码,电影,H5,源码,系统,工具,辅助,科学刀,服务器,易语言,我的世界,精易论坛,哔哩哔哩,,e,mc,ps,cf,lol,cms,dnf,seo,php,asp,emlog,html,Discuz,wordpress,Minecraft" />
     <meta name="description" content="枫叶博客，专注于互联网技术原创的独立博客！" />
-	<meta property="og:type" content="index"/>
-	<meta property="og:title" content="枫叶博客" />
-	<meta property="og:image" content="https://www.fybk.cc/zb_users/upload/2020/09/20200917142919160032415977943.png" />
-	<meta property="og:url" content="https://www.fybk.cc/" />
+    <meta property="og:type" content="index"/>
+    <meta property="og:title" content="枫叶博客" />
+    <meta property="og:image" content="https://www.fybk.cc/zb_users/upload/2020/09/20200917142919160032415977943.png" />
+    <meta property="og:url" content="https://www.fybk.cc/" />
     <script src="static/js/jquery-2.2.4.min.js"></script>
-	<script src="static/js/zblogphp.js"></script>
-	<script src="static/js/c_html_js_add.js"></script>
-	<script src="static/js/swiper.min.js"></script>
-	<link href="static/css/animate.css" media="all" rel="stylesheet" />
-	<link href="static/css/font-awesome.min.css" rel="stylesheet">
-	<link href="static/css/style.css" media="all" rel="stylesheet" />
-	<link rel="alternate" type="application/rss+xml" href="https://www.fybk.cc/feed.php" title="枫叶博客" />
-	<link rel="shortcut icon" href="https://www.fybk.cc/favicon.ico" type="image/x-icon">
-	<style>	.pjax_loading {position: fixed;top: 45%;left: 45%;display: none;z-index: 999999;width: 124px;height: 124px;background: url('static/images/pjax_loading.gif') 50% 50% no-repeat;}.pjax_loading1 {position: fixed;top: 0;left: 0;z-index: 999999;display: none;width: 100%;height: 100%;background-color: #4c4c4c;opacity: .2}
-	</style>
-	<!--[if lt IE 9]><script src="static/js/html5shiv.js"></script><![endif]-->
-<style type="text/css">.prettyprint,pre.prettyprint{white-space:pre-wrap;word-wrap:break-word;background-color:#444;border:1px solid #272822;overflow:hidden;padding:0;margin:20px 0;font-family:Consolas,"Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;color:#666}.prettyprint.linenums,pre.prettyprint.linenums{-webkit-box-shadow:inset 40px 0 0 #39382e,inset 41px 0 0 #464741;-moz-box-shadow:inset 40px 0 0 #39382e,inset 41px 0 0 #464741;box-shadow:inset 40px 0 0 #39382e,inset 41px 0 0 #464741}.prettyprint.linenums ol,pre.prettyprint.linenums ol{margin:0 0 0 33px;padding:5px 10px}.prettyprint.linenums ol li,pre.prettyprint.linenums ol li{color:#bebec5;line-height:20px;margin-left:0;list-style:decimal}.prettyprint ol.linenums{margin-bottom:0;background-color:#272822}.prettyprint .com{color:#93a1a1}.prettyprint .lit{color:#ae81ff}.prettyprint .clo,.prettyprint .opn,.prettyprint .pun{color:#f8f8f2}.prettyprint .fun{color:#dc322f}.prettyprint .atv,.prettyprint .str{color:#e6db74}.prettyprint .kwd,.prettyprint .tag{color:#f92659}.prettyprint .atn,.prettyprint .dec,.prettyprint .typ,.prettyprint .var{color:#a6e22e}.prettyprint .pln{color:#66d9ef}
-	</style>
-<link rel="stylesheet" href="static/css/laycenter.css" type="text/css" media="all"/>
-<script type="text/javascript" src="static/js/layui.js"></script>
-<script type="text/javascript" src="static/js/laycenter.js"></script>
-<script async src='static/js/invisible.js'></script></head>
+    <script src="static/js/zblogphp.js"></script>
+    <script src="static/js/c_html_js_add.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <link href="static/css/animate.css" media="all" rel="stylesheet" />
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" media="all" rel="stylesheet" />
+    <link rel="alternate" type="application/rss+xml" href="https://www.fybk.cc/feed.php" title="枫叶博客" />
+    <link rel="shortcut icon" href="https://www.fybk.cc/favicon.ico" type="image/x-icon">
+    <style>	.pjax_loading {position: fixed;top: 45%;left: 45%;display: none;z-index: 999999;width: 124px;height: 124px;background: url('static/images/pjax_loading.gif') 50% 50% no-repeat;}.pjax_loading1 {position: fixed;top: 0;left: 0;z-index: 999999;display: none;width: 100%;height: 100%;background-color: #4c4c4c;opacity: .2}
+    </style>
+    <!--[if lt IE 9]><script src="static/js/html5shiv.js"></script><![endif]-->
+    <style type="text/css">.prettyprint,pre.prettyprint{white-space:pre-wrap;word-wrap:break-word;background-color:#444;border:1px solid #272822;overflow:hidden;padding:0;margin:20px 0;font-family:Consolas,"Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;color:#666}.prettyprint.linenums,pre.prettyprint.linenums{-webkit-box-shadow:inset 40px 0 0 #39382e,inset 41px 0 0 #464741;-moz-box-shadow:inset 40px 0 0 #39382e,inset 41px 0 0 #464741;box-shadow:inset 40px 0 0 #39382e,inset 41px 0 0 #464741}.prettyprint.linenums ol,pre.prettyprint.linenums ol{margin:0 0 0 33px;padding:5px 10px}.prettyprint.linenums ol li,pre.prettyprint.linenums ol li{color:#bebec5;line-height:20px;margin-left:0;list-style:decimal}.prettyprint ol.linenums{margin-bottom:0;background-color:#272822}.prettyprint .com{color:#93a1a1}.prettyprint .lit{color:#ae81ff}.prettyprint .clo,.prettyprint .opn,.prettyprint .pun{color:#f8f8f2}.prettyprint .fun{color:#dc322f}.prettyprint .atv,.prettyprint .str{color:#e6db74}.prettyprint .kwd,.prettyprint .tag{color:#f92659}.prettyprint .atn,.prettyprint .dec,.prettyprint .typ,.prettyprint .var{color:#a6e22e}.prettyprint .pln{color:#66d9ef}
+    </style>
+    <link rel="stylesheet" href="static/css/laycenter.css" type="text/css" media="all"/>
+    <script type="text/javascript" src="static/js/layui.js"></script>
+    <script type="text/javascript" src="static/js/laycenter.js"></script>
+    <script async src='static/js/invisible.js'></script></head>
 <body class="home home-index">
 <header class="top-header">
-	<div class="top-bar">
-		<div class="new-header container clearfix">
-			<div class="top-bar-left header-nav fl" data-type="index" data-infoid="index">
-				<div class="m-nav-header">
-					<div class="m_nav-list"><a href="javascript:;" class="lines js-m-navlist"><i class="nav-bar"><span></span><span></span><span></span></i></a></div>
-				</div>
-				<div class="m-nav-logo">
-					<a href="https://www.fybk.cc/"><img src="static/picture/20200917142919160032415977943.png" alt="枫叶博客"><img class="night-logo" src="static/picture/20200917142919160032415977943.png" alt="枫叶博客"></a>
-				</div>
-				<div class="m-nav-search">
-					<a id="m-nav-so" href="javascript:void(0);"><i class="fa fa-search"></i></a>
-					<a class="at-night" href="javascript:switchNightMode()" target="_self"><i class="wb-switch"></i></a>					<div class="mini-search">
-						<form name="search" class="searchform" method="post" action="https://www.fybk.cc/zb_system/cmd.php?act=search">
-							<input class="searchInput" type="text" name="q" size="11" placeholder="请输入搜索内容..." value="" id="ls" />
-							<button type="submit" class="btn-search dtb2" value=""><i class="fa fa-search"></i></button>
-						</form>
-					</div>
-				</div>
-				<aside class="mobile_aside mobile_nav">
-					<div class="mobile-menu">
-						<nav class="top-bar-navigation">
-							<ul class="top-bar-menu nav-pills">
-																<li id="nvabar-item-index"><a href="https://www.fybk.cc/"><i class="fa fa-home"></i>首页</a></li>
-<li class="menu-item-has-children">
-  <a href="https://www.fybk.cc/category-1.html"><i class="fa fa-cloud-download"></i>软件分享</a>
-  <ul class="dropdown-menu sub-menu">
-    <li><a href="https://www.fybk.cc/category-2.html"><i class="fa fa-windows"></i>系统软件</a></li>
-    <li><a href="https://www.fybk.cc/category-16.html"><i class="fa fa-android"></i>手机软件</a></li>
-    <li><a href="https://www.fybk.cc/category-30.html"><i class="fa fa-cloud-download"></i>电脑游戏</a></li>
-    <li><a href="https://www.fybk.cc/category-29.html"><i class="fa fa-android"></i>手机游戏</a></li>
-  </ul>
-</li>
-<li class="menu-item-has-children">
-  <a href="https://www.fybk.cc/category-4.html"><i class="fa fa-cog"></i>技术分享</a>
-  <ul class="dropdown-menu sub-menu">
-    <li><a href="https://www.fybk.cc/category-6.html"><i class="fa fa-windows"></i>系统技术</a></li>
-    <li><a href="https://www.fybk.cc/category-28.html"><i class="fa fa-windows"></i>一键脚本</a></li>
-  </ul>
-</li>
+    <div class="top-bar">
+        <div class="new-header container clearfix">
+            <div class="top-bar-left header-nav fl" data-type="index" data-infoid="index">
+                <div class="m-nav-header">
+                    <div class="m_nav-list"><a href="javascript:;" class="lines js-m-navlist"><i class="nav-bar"><span></span><span></span><span></span></i></a></div>
+                </div>
+                <div class="m-nav-logo">
+                    <a href="https://www.fybk.cc/"><img src="static/picture/20200917142919160032415977943.png" alt="枫叶博客"><img class="night-logo" src="static/picture/20200917142919160032415977943.png" alt="枫叶博客"></a>
+                </div>
+                <div class="m-nav-search">
+                    <a id="m-nav-so" href="javascript:void(0);"><i class="fa fa-search"></i></a>
+                    <a class="at-night" href="javascript:switchNightMode()" target="_self"><i class="wb-switch"></i></a>					<div class="mini-search">
+                    <form name="search" class="searchform" method="post" action="https://www.fybk.cc/zb_system/cmd.php?act=search">
+                        <input class="searchInput" type="text" name="q" size="11" placeholder="请输入搜索内容..." value="" id="ls" />
+                        <button type="submit" class="btn-search dtb2" value=""><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                </div>
+                <aside class="mobile_aside mobile_nav">
+                    <div class="mobile-menu">
+                        <nav class="top-bar-navigation">
+                            <ul class="top-bar-menu nav-pills">
+                                <li id="nvabar-item-index"><a href="https://www.fybk.cc/"><i class="fa fa-home"></i>首页</a></li>
 
-<li class="menu-item-has-children">
-  <a href="https://www.fybk.cc/category-7.html"><i class="fa fa-share-alt"></i>模板分享</a>
-  <ul class="dropdown-menu sub-menu">
-    <li><a href="https://www.fybk.cc/category-8.html"><i class="fa fa-desktop"></i>emlog模板</a></li>
-    <li><a href="https://www.fybk.cc/category-33.html"><i class="fa fa-desktop"></i>emlog插件</a></li>
-    <li><a href="https://www.fybk.cc/category-9.html"><i class="fa fa-foursquare"></i>zblog模板</a></li>
-    <li><a href="https://www.fybk.cc/category-34.html"><i class="fa fa-foursquare"></i>zblog插件</a></li>
-    <li><a href="https://www.fybk.cc/category-10.html"><i class="fa fa-share-alt"></i>typecho模板</a></li>
-    <li><a href="https://www.fybk.cc/category-35.html"><i class="fa fa-share-alt"></i>typecho插件</a></li>
-    <li><a href="https://www.fybk.cc/category-14.html"><i class="fa fa-share-alt"></i>Discuz模板</a></li>
-    <li><a href="https://www.fybk.cc/category-17.html"><i class="fa fa-wordpress"></i>WordPress模板</a></li>
-  </ul>
-</li>
-<li class="menu-item-has-children">
-  <a href="https://www.fybk.cc/category-11.html"><i class="fa fa-fire"></i>源码分享</a>
-  <ul class="dropdown-menu sub-menu">
-    <li><a href="https://www.fybk.cc/category-12.html"><i class="fa fa-fire"></i>html源码</a></li>
-    <li><a href="https://www.fybk.cc/category-13.html"><i class="fa fa-fire"></i>易语言源码</a></li>
-    <li><a href="https://www.fybk.cc/category-37.html"><i class="fa fa-fire"></i>Thinkphp源码</a></li>
-    <li><a href="https://www.fybk.cc/category-36.html"><i class="fa fa-fire"></i>iapp源码</a></li>
-    <li><a href="https://www.fybk.cc/category-15.html"><i class="fa fa-fire"></i>PHP源码</a></li>
-    <li><a href="https://www.fybk.cc/category-18.html"><i class="fa fa-fire"></i>ASP源码</a></li>
-  </ul>
-</li>
-<li class="menu-item-has-children">
-  <a href="https://www.fybk.cc/category-19.html"><i class="fa fa-gavel"></i>值得一看</a>
-  <ul class="dropdown-menu sub-menu">
-    <li><a href="https://www.fybk.cc/category-25.html"><i class="fa fa-picture-o"></i>图片资源</a></li>
-    <li><a href="https://www.fybk.cc/category-26.html"><i class="fa fa-gavel"></i>新闻快报</a></li>
-    <li><a href="https://www.fybk.cc/category-31.html"><i class="fa fa-gavel"></i>PC服务器</a></li>
-    <li><a href="https://www.fybk.cc/category-32.html"><i class="fa fa-gavel"></i>PE服务器</a></li>
-  </ul>
-</li>
-<li class="menu-item-has-children">
-  <a href=""><i class="fa fa-flask"></i>更多功能</a>
-  <ul class="dropdown-menu sub-menu">
-    <li><a href="https://www.fybk.cc/1359.html"><i class="fa fa-flask"></i>常用工具</a></li>
-    <li><a href="https://www.fybk.cc/187.html"><i class="fa fa-link"></i>友链申请</a></li>
-    <li><a href="https://www.fybk.cc/2.html"><i class="fa fa-pause"></i>商业服务</a></li>
-    <li><a href="https://www.fybk.cc/1736.html"><i class="fa fa-flask"></i>订制服务</a></li>
-  </ul>
-</li>							</ul>
-														<div id="sidebar-toggle" class="sidebar-toggle"><span></span></div>
-						</nav>
-					</div>
-				</aside>
-			</div>
-			<div class="top-bar-right text-right fr">
-				<div class="top-admin">
-					<div class="login">    <a href="https://www.fybk.cc/zb_users/plugin/LayCenter/lib/QQ/login.php" target="_self">QQ登陆</a><i class="fa fa-sign-in"></i><a href="/zb_system/login.php">注册/登录</a>    </div>
-					<a class="at-night" href="javascript:switchNightMode()" target="_self"><i class="wb-switch"></i></a>				</div>
-			</div>
-		</div>
-		<div class="container secnav clearfix">
-			<div class="fav-subnav">
-				<div class="top-bar-left pull-left navlogo">
-					<a href="https://www.fybk.cc/" class="logo box"><img src="static/picture/20200917142919160032415977943.png" class="logo-light" id="logo-light" alt="枫叶博客"><img src="static/picture/20200917142919160032415977943.png" class="logo-dark d-none" id="logo-dark" alt="枫叶博客"><b class="shan"></b></a>
-									</div>
-				<div class="search-warp clearfix">
-					<form name="search" method="post" action="https://www.fybk.cc/zb_system/cmd.php?act=search">
-						<div class="search-area"><input class="search-input" placeholder="搜索感兴趣的知识和文章" type="text" name="q"></div>
-						<button class="showhide-search" type="submit"><i class="fa fa-search"></i>搜索一下</button>
-					</form>
-				</div>
-			</div>
-		</div>		<div id="percentageCounter"></div>
-	</div>
+                                <li class="">
+                                    <a href="https://www.fybk.cc/category-4.html"><i class="fa fa-cog"></i>技术分享</a>
+                                </li>
+
+                            </ul>
+                            <div id="sidebar-toggle" class="sidebar-toggle"><span></span></div>
+                        </nav>
+                    </div>
+                </aside>
+            </div>
+            <div class="top-bar-right text-right fr">
+                <div class="top-admin">
+                </div>
+            </div>
+            <div class="container secnav clearfix">
+                <div class="fav-subnav">
+                    <div class="top-bar-left pull-left navlogo">
+                        <a href="https://www.fybk.cc/" class="logo box"><img src="static/picture/20200917142919160032415977943.png" class="logo-light" id="logo-light" alt="枫叶博客"><img src="static/picture/20200917142919160032415977943.png" class="logo-dark d-none" id="logo-dark" alt="枫叶博客"><b class="shan"></b></a>
+                    </div>
+                    <div class="search-warp clearfix">
+                        <form name="search" method="post" action="https://www.fybk.cc/zb_system/cmd.php?act=search">
+                            <div class="search-area"><input class="search-input" placeholder="搜索感兴趣的知识和文章" type="text" name="q"></div>
+                            <button class="showhide-search" type="submit"><i class="fa fa-search"></i>搜索一下</button>
+                        </form>
+                    </div>
+                </div>
+            </div>		<div id="percentageCounter"></div>
+        </div>
 </header><main id="main" class="site-main container clearfix"><!--main container-->
-	<div class="row">
-		<div class="main fl">			<div class="main-slider clearfix">
-				<div class="sp-slideshow"><!-- Swiper -->
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><a class="block-fea" href="https://api.tudoumc.com/jx/demo/" style="background-image: url(static/images/20211126113240163789756034479.gif);" target="_blank"><i class="mask"></i><div class="entyr-icon"><i class="fa fa-star-o"></i></div><header class="swiper-header"><span class="swiper-title"><span class="badge arc_v2">推荐</span>短视频在线解析</span></header></a></div>						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-				<div class="small-slider">					<div class="small-slider-item">
-						<a href="https://www.fybk.cc/post/1135.html" style="background-image: url(static/images/202003061583501393792168.png);" class="small-slider-img"><i class="mask"></i><div class="title"><span class="badge arc_v4">热文</span>我的世界仙楼阁服务器官网HTML源码</div></a>
-						<div class="entyr-icon"><i class="fa fa-star-o"></i></div>
-					</div>					<div class="small-slider-item">
-						<a href="https://www.fybk.cc/post/1140.html" style="background-image: url(static/images/202003061583503731423770.png);" class="small-slider-img"><i class="mask"></i><div class="title"><span class="badge arc_v4">热文</span>我的世界云梦星辰服务器官网HTML源码</div></a>
-						<div class="entyr-icon"><i class="fa fa-star-o"></i></div>
-					</div>				</div>			</div>
-			<div class="toptext">
-				<ul class="toptext-list clearfix">					<li><em class="color-1">1</em><a href="https://www.fybk.cc/post/1251.html" title="PHP在线客服系统源码">PHP在线客服系统源码</a></li>					<li><em class="color-2">2</em><a href="https://www.fybk.cc/post/1833.html" title="2020年Sadnt发卡源码全解密版">2020年Sadnt发卡源码全解密版</a></li>					<li><em class="color-3">3</em><a href="https://www.fybk.cc/post/1440.html" title="苹果H5网页封装APP免签名系统">苹果H5网页封装APP免签名系统</a></li>					<li><em class="color-4">4</em><a href="https://www.fybk.cc/post/1830.html" title="QBYY易支付源码">QBYY易支付源码</a></li>					<li><em class="color-5">5</em><a href="https://www.fybk.cc/post/1435.html" title="我的世界矿工物语HTML官网源码">我的世界矿工物语HTML官网源码</a></li>					<li><em class="color-6">6</em><a href="https://www.fybk.cc/post/1979.html" title="枫叶引流工具Ver1.0【免费版】">枫叶引流工具Ver1.0【免费版】</a></li>					<li><em class="color-7">7</em><a href="https://www.fybk.cc/post/1555.html" title="小旋风万能蜘蛛池X8.51完美破解不限授权版本">小旋风万能蜘蛛池X8.51完美破解不限授权版本</a></li>					<li><em class="color-8">8</em><a href="https://www.fybk.cc/post/986.html" title="服务器真实IP解析查询工具">服务器真实IP解析查询工具</a></li>				</ul>
-			</div><!--main-slider-->						<header class="site-header">
-				<nav class="main-navigation">
-					<ul class="menu-nav-inline">
-						<li class="menu-item active"><a data-post href="/">最新文章</a></li>
-											</ul>
-									</nav>
-			</header>
-			<div id="content" class="side-content auto-multi clearfix">
-				<div id="post-list" class="home-main index-page auto-main"><!--页面主体信息-->
-														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list1">
-	<div class="entry-container" style="padding-left: 0px  !important;">
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2017.html">代刷网违法？解答你的疑惑 </a></h2></header>
-		<div class="entry-summary ss"><p>刷单是违法的，经营者违反本法第八条规定对其商品作虚假或者引人误解的商业宣传，或者通过组织虚假交易等方式帮助其他经营者进行虚假或者引人误解的商业宣传的，由监督检查部门责令停止违法行为，处二十万元以上一百万元以下的罚款；情节严重的，处一百万元以上二百万元以下的罚款，可以吊销营业执...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-26.html"><span class="separator">/</span>新闻快报</a>
-			<time datetime="2021-09-24"><span class="separator">/</span>2021-09-24</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2017.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>226 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list2">
-	<div class="entry-container">
-		<div class="block-image feaimg">
-			<a class="block-fea" href="https://www.fybk.cc/post/2016.html" title="绕过CDN查网站源IP教程"><img class="lazy" src="static/picture/202109211632209772600730.png" alt="绕过CDN查网站源IP教程" title="详细阅读：绕过CDN查网站源IP教程"></a>
-			<div class="entyr-icon"><i class="fa fa-image"></i></div>
-		</div>
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2016.html">绕过CDN查网站源IP教程</a></h2></header>
-		<div class="entry-summary ss"><p>邮件漏洞有很多站长为了保护自己的没有防御的服务器，都套上了CDN。虽然套CDN可以让网站不被轻易攻击拿下，但是稍有疏忽，就暴露了自己源站服务器的IP地址。为了使有人评论、评论被回复、评论待审核..的时候能用邮件通知自...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-09-21"><span class="separator">/</span>2021-09-21</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2016.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>250 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list3">
-	<div class="entry-container">
-		<div class="block-image feaimg">
-			<a class="block-fea" href="https://www.fybk.cc/post/2015.html" title="利用快速收录域名给其他网站快速收录"><img class="lazy" src="static/picture/202109201632117194626006.png" alt="利用快速收录域名给其他网站快速收录" title="详细阅读：利用快速收录域名给其他网站快速收录"></a>
-			<div class="entyr-icon"><i class="fa fa-image"></i></div>
-		</div>
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2015.html">利用快速收录域名给其他网站快速收录</a></h2></header>
-		<div class="entry-summary ss"><p>原理百度快速收录权限的域名提交站点快速收录，利用301技术重定向到未收录站点，实现快速收录实现方案1、在站点目录下面新建301目录比喻/301/目录下文件命名/index.php，将下面代码放置index.php文件...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-09-20"><span class="separator">/</span>2021-09-20</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2015.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>173 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list4">
-	<div class="entry-container" style="padding-left: 0px  !important;">
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2014.html">免费让你的服务器加速3%-20%的方法</a></h2></header>
-		<div class="entry-summary ss"><p>debian系统执行这个命令sed&nbsp;-i&nbsp;‘s/GRUB_CMDLINE_LINUX_DEFAULT=”/GRUB_CMDLINE_LINUX_DEFAULT=”noibrs&nbsp;noibpb&nbsp;nopti&nbsp;nospectre_v2...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-6.html"><span class="separator">/</span>系统技术</a>
-			<time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2014.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>177 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list5">
-	<div class="entry-container">
-		<div class="block-image feaimg">
-			<a class="block-fea" href="https://www.fybk.cc/post/2013.html" title="Nginx 防止 SQL 注入、XSS 攻击的实践配置方法"><img class="lazy" src="static/picture/202109151631717663427326.jpg" alt="Nginx 防止 SQL 注入、XSS 攻击的实践配置方法" title="详细阅读：Nginx 防止 SQL 注入、XSS 攻击的实践配置方法"></a>
-			<div class="entyr-icon"><i class="fa fa-image"></i></div>
-		</div>
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2013.html">Nginx 防止 SQL 注入、XSS 攻击的实践配置方法</a></h2></header>
-		<div class="entry-summary ss"><p>有的时候发现网站访问缓慢，甚至出现 504 错误，通过 top -i 命令查看服务器负载发现负载数值飙升到 3.2 之多了，并且持续时间越来越频繁直至持续升高的趋势，还以为是被攻击了，对来访 IP 进行了阈值限制后效...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2013.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>146 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list6">
-	<div class="entry-container">
-		<div class="block-image feaimg">
-			<a class="block-fea" href="https://www.fybk.cc/post/2012.html" title="宝塔面板解锁Nginx防火墙及网站监控报表"><img class="lazy" src="static/picture/202109151631717043380369.jpg" alt="宝塔面板解锁Nginx防火墙及网站监控报表" title="详细阅读：宝塔面板解锁Nginx防火墙及网站监控报表"></a>
-			<div class="entyr-icon"><i class="fa fa-image"></i></div>
-		</div>
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2012.html">宝塔面板解锁Nginx防火墙及网站监控报表</a></h2></header>
-		<div class="entry-summary ss"><p>说明测试环境：Ubuntu / Debian / CentOS测试时间：2021-08-19宝塔版本： 7.7.0仅测试了Nginx防火墙及网站监控报表两款插件，其它收费插件未测试其它系统及版本未进行测试，请自行验证...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2012.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>114 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list7">
-	<div class="entry-container" style="padding-left: 0px  !important;">
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2011.html">关闭宝塔强制登录提醒指令</a></h2></header>
-		<div class="entry-summary ss"><p>宝塔这波强制绑定登录确实很恶心让很大一批用户流向了破解版但是正版终究是正版安全稳定自然比破解版更靠谱这里教大家如何关闭宝塔的强制登录提醒登录ssh在命令行输入以下指令即可关闭。rm&nbsp;-f&nbsp;/www/server/panel/data/bind.pl...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2011.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>115 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list featured auto-list wow fadeInDown" id="list8">
-	<div class="featured-container">
-		<header class="entry-header featitle"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2009.html"><span class="badge arc_v4">热文</span>我的世界斗罗大陆星盾斗罗[1.12.2][服务端]</a></h2></header>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-31.html"><span class="separator">/</span>PC服务器</a>
-			<time datetime="2021-08-07"><span class="separator">/</span>2021-08-07</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2009.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>2057 阅读</span>
-		</div>
-		<div class="rowimg">
-			<div class="col-4">
-				<div class="feaimg"><a class="feaimg-content" title="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" href="https://www.fybk.cc/post/2009.html"><img class="lazy" src="static/picture/202108071628336740228732.jpg" alt="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" title="详细阅读：我的世界斗罗大陆星盾斗罗[1.12.2][服务端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
-			</div>
-			<div class="col-4">
-				<div class="feaimg"><a class="feaimg-content" title="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" href="https://www.fybk.cc/post/2009.html"><img class="lazy" src="static/picture/202108071628336740455392.jpg" alt="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" title="详细阅读：我的世界斗罗大陆星盾斗罗[1.12.2][服务端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
-			</div>
-			<div class="col-4">
-				<div class="feaimg"><a class="feaimg-content" title="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" href="https://www.fybk.cc/post/2009.html"><img class="lazy" src="static/picture/202108071628336740288003.jpg" alt="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" title="详细阅读：我的世界斗罗大陆星盾斗罗[1.12.2][服务端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
-			</div>
-		</div>
-		<div class="entry-summary feasum"><p>全网首发仅此一家无BUG，无后门全网最稳定斗罗端！感兴趣的服主可以直接入手，全网唯一最稳定的斗罗端！！！魂兽都有建模，独一无二，仅此一家！！！想看端具体内容的可以直接加已经在开的星盾斗罗服务器QQ群：10369114...</p></div>
-	</div>
-</article>														<article class="post-list featured auto-list wow fadeInDown" id="list9">
-	<div class="featured-container">
-		<header class="entry-header featitle"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2008.html"><span class="badge arc_v4">热文</span>我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]</a></h2></header>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-30.html"><span class="separator">/</span>电脑游戏</a>
-			<time datetime="2021-07-24"><span class="separator">/</span>2021-07-24</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2008.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>2399 阅读</span>
-		</div>
-		<div class="rowimg">
-			<div class="col-4">
-				<div class="feaimg"><a class="feaimg-content" title="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" href="https://www.fybk.cc/post/2008.html"><img class="lazy" src="static/picture/202107241627115563496368.jpg" alt="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" title="详细阅读：我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
-			</div>
-			<div class="col-4">
-				<div class="feaimg"><a class="feaimg-content" title="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" href="https://www.fybk.cc/post/2008.html"><img class="lazy" src="static/picture/202107241627115565858835.jpg" alt="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" title="详细阅读：我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
-			</div>
-			<div class="col-4">
-				<div class="feaimg"><a class="feaimg-content" title="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" href="https://www.fybk.cc/post/2008.html"><img class="lazy" src="static/picture/202107241627115566169993.jpg" alt="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" title="详细阅读：我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
-			</div>
-		</div>
-		<div class="entry-summary feasum"><p>有效状态&nbsp; &nbsp; &nbsp; 长期开放支持版本&nbsp; &nbsp; &nbsp; 1.12.2盈利模式&nbsp; &nbsp; &nbsp; 公益服务器 » “无条件”捐助游戏模式&nbs...</p></div>
-	</div>
-</article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list10">
-	<div class="entry-container">
-		<div class="block-image feaimg">
-			<a class="block-fea" href="https://www.fybk.cc/post/2007.html" title="ContOS搭建我的世界PE服务器"><img class="lazy" src="static/picture/202107161626402309367713.jpg" alt="ContOS搭建我的世界PE服务器" title="详细阅读：ContOS搭建我的世界PE服务器"></a>
-			<div class="entyr-icon"><i class="fa fa-image"></i></div>
-		</div>
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2007.html"><span class="badge arc_v4">热文</span>ContOS搭建我的世界PE服务器</a></h2></header>
-		<div class="entry-summary ss"><p>yum&nbsp;install&nbsp;screen#新建窗口screen&nbsp;-S&nbsp;mc#配置mkdir&nbsp;/data/mcpecd&nbsp;/data/mcpe...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-07-16"><span class="separator">/</span>2021-07-16</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2007.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>1395 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list11">
-	<div class="entry-container">
-		<div class="block-image feaimg">
-			<a class="block-fea" href="https://www.fybk.cc/post/2006.html" title="宝塔Nginx编译安装headers_more模块"><img class="lazy" src="static/picture/202107161626402190526873.png" alt="宝塔Nginx编译安装headers_more模块" title="详细阅读：宝塔Nginx编译安装headers_more模块"></a>
-			<div class="entyr-icon"><i class="fa fa-image"></i></div>
-		</div>
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2006.html"><span class="badge arc_v4">热文</span>宝塔Nginx编译安装headers_more模块</a></h2></header>
-		<div class="entry-summary ss"><p>前言nginx 的 headers_more模块用于添加/修改/清除/请求/响应头的模块.该模块主要有 4 个指令:more_set_headers 用于 添加、修改、清除 响应头more_clear_headers...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-07-16"><span class="separator">/</span>2021-07-16</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2006.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>1237 阅读</span>
-		</div>
-	</div>
-</article>														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list12">
-	<div class="entry-container" style="padding-left: 0px  !important;">
-		<header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2005.html"><span class="badge arc_v4">热文</span>CURL验证代理池和使用代理</a></h2></header>
-		<div class="entry-summary ss"><p>使用代理//初始化&nbsp;curl&nbsp;乱七八糟就不写了$arrip&nbsp;=&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&#39;xxx.x.xx.x:80&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&#39;xx...</p></div>
-		<div class="entry-meta fea-meta">
-			<a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
-			<a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
-			<time datetime="2021-07-16"><span class="separator">/</span>2021-07-16</time>
-			<a class="meta-viewnums" href="https://www.fybk.cc/post/2005.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>1248 阅读</span>
-		</div>
-	</div>
-</article>								</div>				<footer class="pagination wow fadeInDown">
-					<ul><li class="active"><span>1</span></li>
-<li><a href="https://www.fybk.cc/page_2.html" title="第2页" >2</a></li>
-<li><a href="https://www.fybk.cc/page_3.html" title="第3页" >3</a></li>
-<li><a href="https://www.fybk.cc/page_2.html" title="下一页" class="c-nav next ease a1">下一页</a></li>
-<li><a href="https://www.fybk.cc/page_144.html" class="c-nav ease moye" title="末页">末页 </a></li>
-<li><span>共 144 页</span></li>
-</ul>
-					<div id="loadmore" class="load-more-wrap loadmore"><a class="load-more" href="https://www.fybk.cc/page_2.html" id="post_over">点击查看更多</a></div>				</footer>			</div>
-		</div><!--main fl-->
-		<div class="side fr">			
-<section class="widget wow fadeInDown" id="21321321">
-<div class="widget-box 21321321"><a href="https://api.tudoumc.com/jx/demo/" rel="bookmark"><img src="static/picture/20211126113052163789745218417.gif"></a></div>
-</section><section class="widget wow fadeInDown" id="side_con">
-<h3 class="widget-title"><i class="fa fa-side_con"></i><span>热评文章</span></h3>
-<ul class="widget-box side_con"><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1922.html" title="PHPMailer发送邮件失败：SMTP connect failed（评论：0次）">PHPMailer发送邮件失败：SMTP connect failed</a><p>最近在写一个通过发送邮件重置密码的功能，在本地调试的好好的，结果上...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1915.html" title="小弟以前开idc赚钱的日子，不能忘了分享老哥推荐的法子（评论：0次）">小弟以前开idc赚钱的日子，不能忘了分享老哥推荐的法子</a><p>小弟多年前想开一个loc云赚钱，但苦于没有什么思路，结果几个老哥为...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/2011.html" title="关闭宝塔强制登录提醒指令（评论：0次）">关闭宝塔强制登录提醒指令</a><p>宝塔这波强制绑定登录确实很恶心让很大一批用户流向了破解版但是正版终...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1924.html" title="Kangle CDN网站被关：公司多名高管被抓（评论：0次）">Kangle CDN网站被关：公司多名高管被抓</a><p>圈内小有名气的CDN系统服务商Kangle CDN公司最近踩雷了，...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1927.html" title="zblog升级到1.7.0后系统前台和后台无法访问解决办法（评论：0次）">zblog升级到1.7.0后系统前台和后台无法访问解决办法</a><p>升级到最新的zblog1.7.0后很多人都无法访问后台或者前台，目...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1933.html" title="Cloudflare 对外开放的端口列表（评论：0次）">Cloudflare 对外开放的端口列表</a><p>Cloudflare可用回源端口，在使用宝塔的服务器，配置了CF的...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1934.html" title="宝塔NGINX网站只允许Cloudflare CDN的IP访问方法（评论：0次）">宝塔NGINX网站只允许Cloudflare CDN的IP访问方法</a><p>对于使用Cloudflare的CDN的站长，需要设置服务器只允许来...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1984.html" title="cloudflare最新漏洞，使用cloudflare可直接获取服务器源ip！！！（评论：0次）">cloudflare最新漏洞，使用cloudflare可直接获取服务器源ip！！！</a><p>使用cloudflare的站长们！！！大事不好了！！！使用clou...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1985.html" title="cnpm - 解决 &quot; cnpm : 无法加载文件 C:\Users\93457\AppData\Roaming\npm\cnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息 。。。 &quot;（评论：0次）">cnpm - 解决 &quot; cnpm : 无法加载文件 C:\Users\93457\AppData\Roaming\npm\cnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息 。。。 &quot;</a><p>1.在win10 系统中搜索框 输入 Windos PowerSh...</p></li></ul>
-</section><section class="widget wow fadeInDown" id="divComments">
-<h3 class="widget-title"><i class="fa fa-divComments"></i><span>最新留言</span></h3>
-<ul class="widget-box divComments"><div class="comment-item">
-	<div class="comment-meta">
-	<div class="meta-item">
-		<span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/fde15775660a49ffa1821fb031fa32b3.gif)"></i></span>土豆MC		<span class="autlv lay-0">普通用户</span></div>
-				<span class="comment-views">09月17日</span>
-	</div>
-	<div class="comment-content">
-		<p><a href="https://www.fybk.cc/187.html#cmt336" title="《友链申请》">已添加贵站，麻烦添加友联哦，谢谢！！名称："土豆MC"URL：https://www.tudoumc.com介</a></p>
-	</div>
-	<h4><a href="https://www.fybk.cc/187.html#cmt336"><i class="fa fa-file-text-o"></i>《友链申请》</a></h4>
-</div><div class="comment-item">
-	<div class="comment-meta">
-	<div class="meta-item">
-		<span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/a7f24f0e8fcb4511bd676ee65a3b5cd7.gif)"></i></span>zhujh		<span class="autlv lay-0">普通用户</span></div>
-				<span class="comment-views">08月06日</span>
-	</div>
-	<div class="comment-content">
-		<p><a href="https://www.fybk.cc/post/1340.html#cmt326" title="《我的世界枫叶服主助手工具Ver1.0》">买了在哪下载</a></p>
-	</div>
-	<h4><a href="https://www.fybk.cc/post/1340.html#cmt326"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手工具Ver1.0》</a></h4>
-</div><div class="comment-item">
-	<div class="comment-meta">
-	<div class="meta-item">
-		<span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/765a127309c4425fa53214732569d0cc.gif)"></i></span>zzy		<span class="autlv lay-0">普通用户</span></div>
-				<span class="comment-views">06月24日</span>
-	</div>
-	<div class="comment-content">
-		<p><a href="https://www.fybk.cc/post/1101.html#cmt280" title="《我的世界枫叶服主助手Ver1.0》">有点懵，是不是要自己搞一个服务端才能用？</a></p>
-	</div>
-	<h4><a href="https://www.fybk.cc/post/1101.html#cmt280"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手Ver1.0》</a></h4>
-</div><div class="comment-item">
-	<div class="comment-meta">
-	<div class="meta-item">
-		<span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/765a127309c4425fa53214732569d0cc.gif)"></i></span>zzy		<span class="autlv lay-0">普通用户</span></div>
-				<span class="comment-views">06月24日</span>
-	</div>
-	<div class="comment-content">
-		<p><a href="https://www.fybk.cc/post/1101.html#cmt278" title="《我的世界枫叶服主助手Ver1.0》">作弊了是不是就要封了？</a></p>
-	</div>
-	<h4><a href="https://www.fybk.cc/post/1101.html#cmt278"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手Ver1.0》</a></h4>
-</div><div class="comment-item">
-	<div class="comment-meta">
-	<div class="meta-item">
-		<span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/765a127309c4425fa53214732569d0cc.gif)"></i></span>zzy		<span class="autlv lay-0">普通用户</span></div>
-				<span class="comment-views">06月24日</span>
-	</div>
-	<div class="comment-content">
-		<p><a href="https://www.fybk.cc/post/1101.html#cmt276" title="《我的世界枫叶服主助手Ver1.0》">斗罗服可以用吗？</a></p>
-	</div>
-	<h4><a href="https://www.fybk.cc/post/1101.html#cmt276"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手Ver1.0》</a></h4>
-</div></ul>
-</section>		</div>
-	</div><!--row-->
-						<div class="link-box box-shadow wow fadeInDown"><!--友情链接-->
-		<section class="hot-news-title">
-			<h3>友情链接</h3>
-			<span class="suburl"><a href="https://www.fybk.cc/187.html" target="_blank">更多<i class="fa fa-plus-circle"></i></a></span>
-		</section>
-		<ul id="link-home">
-			<li><a href="https://kfuu.cn" target="_blank" title="可风网"><img src="static/picture/20200229132436158295387689556.ico" alt="">可风网</a></li><li><a href="https://www.tudoumc.com" target="_blank" title="土豆MC"><img src="static/picture/20210916210944163179778482776.ico" alt="">土豆MC</a></li><li><a href="https://www.go176.net" target="_blank" title="剑客网"><img src="static/picture/20200702101846159365632627831.jpg" alt="">剑客网</a></li><li><a href="https://www.baiyaodao.com" target="_blank" title="百妖岛"><img src="static/picture/20210630193949162505318959948.ico" alt="">百妖岛</a></li><li><a href="https://www.shuyong.net" target="_blank" title="舍力博客"><img src="static/picture/20200229132015158295361517637.ico" alt="">舍力博客</a></li><li><a href="https://www.w7.wiki" target="_blank" title="微擎百科"><img src="static/picture/20200229132415158295385592169.ico" alt="">微擎百科</a></li><li><a href="https://www.ruletree.club" target="_blank" title="规则之树"><img src="static/picture/20200304133628158330018825358.png" alt="">规则之树</a></li>		</ul>
-	</div></main>
-<footer class="site-footer footer">
-	<div class="site-info clearfix">
-		<div class="container">
-			<div class="footer-left"><!--底部左边-->
-				<div class="footer-l-top clearfix">
-					<a rel="nofollow" href="https://www.fybk.cc/187.html" target="_blank"><i class="fa fa-link"></i>友链申请</a>
-<a rel="nofollow" href="https://www.fybk.cc/2.html" target="_blank"><i class="fa fa-jpy"></i>商业服务</a>
-<a rel="nofollow" href="https://www.fybk.cc/1258.html" target="_blank"><i class="fa fa-jpy"></i>侵权联系</a>
-<a rel="nofollow" href="https://www.fybk.cc/1257.html" target="_blank"><i class="fa fa-link"></i>免责声明</a>				</div>
-				<div class="footer-l-btm">
-					<p class="top-text">Copyright<i class="fa fa-copyright"></i>2019-2020<a href="https://www.fybk.cc/">枫叶博客</a>版权所有
-<script src="static/js/5ebba2d097904b75a75c7581bf49d902.js" id="myhk" key="155047049672" m="1"></script>安全运行<span id="iday"></span>天 <script>function siteRun(d){var nowD=new Date();return parseInt((nowD.getTime()-Date.parse(d))/24/60/60/1000)} document.getElementById("iday").innerHTML=siteRun("2008/08/08");</script></p>
-					<p class="jubao">本站的内容仅供参考学习使用。本站发布的内容若侵犯到您的权益，请联系站长删除，我们将及时处理。</p>
-					<p class="btm-text">					<span class="rt-times">运行时长：0.057秒</span><span class="rt-sql">查询信息：19 次</span></p>
-				</div>
-			</div>
-			<div class="footer-right"><!--底部右边-->
-				<div class="wxcode"><img alt="微信扫一扫" src="static/picture/20200701103607159357096733270.jpg"></div>
-			</div>
-		</div>
-	</div>
-	<div id="backtop" class="backtop">
-		<div class="bt-box top"><i class="fa fa-angle-up fa-2x"></i></div>
-		<div class="bt-box qq"><a href="tencent://message/?uin=1610775113&site=qq&Menu=yes" rel="nofollow" target="_blank" title="企鹅号"><i class="fa fa-qq fa-2x"></i></a></div>		<div class="bt-box bottom"><i class="fa fa-angle-down fa-2x"></i></div>
-	</div>
-	    <script src="static/js/custom.js"></script>
-	<script src="static/js/wow.min.js"></script>
-		<script src="static/js/prettify.js" type="text/javascript"></script>
-</footer>
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6c822f2f79017ce0',m:'MOb5lJu_GYs2IX9QtDKHvYnnRkNpCrM51kq8Iknd720-1641275374-0-AYf48/6Efd9Up6xbHxFBhN9oAPrZmmadV5kv1xk7lMz9dY8Sks9KP0TNjy0YDHvKf8kQ+QPikEG0WvParaFZxXJrSTZACgRdWhywQgVAJcZm7lHEsTtXgbHgNlbA25UB4A==',s:[0x9d1d78ebc5,0xf1ff20a49c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script><script defer src="static/js/b02a54bca0b34eb586395efe8ce6ef61.js" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6c822f2f79017ce0","version":"2021.12.0","r":1,"token":"776870bd5e914f9693a2a32d28cef7a8","si":100}' crossorigin="anonymous"></script>
+    <div class="row">
+        <div class="main fl">			<div class="main-slider clearfix">
+            <div class="sp-slideshow"><!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a class="block-fea" href="https://api.tudoumc.com/jx/demo/" style="background-image: url(static/images/20211126113240163789756034479.gif);" target="_blank"><i class="mask"></i><div class="entyr-icon"><i class="fa fa-star-o"></i></div><header class="swiper-header"><span class="swiper-title"><span class="badge arc_v2">推荐</span>短视频在线解析</span></header></a></div>						</div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="small-slider">					<div class="small-slider-item">
+                <a href="https://www.fybk.cc/post/1135.html" style="background-image: url(static/images/202003061583501393792168.png);" class="small-slider-img"><i class="mask"></i><div class="title"><span class="badge arc_v4">热文</span>我的世界仙楼阁服务器官网HTML源码</div></a>
+                <div class="entyr-icon"><i class="fa fa-star-o"></i></div>
+            </div>					<div class="small-slider-item">
+                <a href="https://www.fybk.cc/post/1140.html" style="background-image: url(static/images/202003061583503731423770.png);" class="small-slider-img"><i class="mask"></i><div class="title"><span class="badge arc_v4">热文</span>我的世界云梦星辰服务器官网HTML源码</div></a>
+                <div class="entyr-icon"><i class="fa fa-star-o"></i></div>
+            </div>				</div>			</div>
+            <div class="toptext">
+                <ul class="toptext-list clearfix">					<li><em class="color-1">1</em><a href="https://www.fybk.cc/post/1251.html" title="PHP在线客服系统源码">PHP在线客服系统源码</a></li>					<li><em class="color-2">2</em><a href="https://www.fybk.cc/post/1833.html" title="2020年Sadnt发卡源码全解密版">2020年Sadnt发卡源码全解密版</a></li>					<li><em class="color-3">3</em><a href="https://www.fybk.cc/post/1440.html" title="苹果H5网页封装APP免签名系统">苹果H5网页封装APP免签名系统</a></li>					<li><em class="color-4">4</em><a href="https://www.fybk.cc/post/1830.html" title="QBYY易支付源码">QBYY易支付源码</a></li>					<li><em class="color-5">5</em><a href="https://www.fybk.cc/post/1435.html" title="我的世界矿工物语HTML官网源码">我的世界矿工物语HTML官网源码</a></li>					<li><em class="color-6">6</em><a href="https://www.fybk.cc/post/1979.html" title="枫叶引流工具Ver1.0【免费版】">枫叶引流工具Ver1.0【免费版】</a></li>					<li><em class="color-7">7</em><a href="https://www.fybk.cc/post/1555.html" title="小旋风万能蜘蛛池X8.51完美破解不限授权版本">小旋风万能蜘蛛池X8.51完美破解不限授权版本</a></li>					<li><em class="color-8">8</em><a href="https://www.fybk.cc/post/986.html" title="服务器真实IP解析查询工具">服务器真实IP解析查询工具</a></li>				</ul>
+            </div><!--main-slider-->						<header class="site-header">
+                <nav class="main-navigation">
+                    <ul class="menu-nav-inline">
+                        <li class="menu-item active"><a data-post href="/">最新文章</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="content" class="side-content auto-multi clearfix">
+                <div id="post-list" class="home-main index-page auto-main"><!--页面主体信息-->
+                    <article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list1">
+                        <div class="entry-container" style="padding-left: 0px  !important;">
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2017.html">代刷网违法？解答你的疑惑 </a></h2></header>
+                            <div class="entry-summary ss"><p>刷单是违法的，经营者违反本法第八条规定对其商品作虚假或者引人误解的商业宣传，或者通过组织虚假交易等方式帮助其他经营者进行虚假或者引人误解的商业宣传的，由监督检查部门责令停止违法行为，处二十万元以上一百万元以下的罚款；情节严重的，处一百万元以上二百万元以下的罚款，可以吊销营业执...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-26.html"><span class="separator">/</span>新闻快报</a>
+                                <time datetime="2021-09-24"><span class="separator">/</span>2021-09-24</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2017.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>226 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list2">
+                        <div class="entry-container">
+                            <div class="block-image feaimg">
+                                <a class="block-fea" href="https://www.fybk.cc/post/2016.html" title="绕过CDN查网站源IP教程"><img class="lazy" src="static/picture/202109211632209772600730.png" alt="绕过CDN查网站源IP教程" title="详细阅读：绕过CDN查网站源IP教程"></a>
+                                <div class="entyr-icon"><i class="fa fa-image"></i></div>
+                            </div>
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2016.html">绕过CDN查网站源IP教程</a></h2></header>
+                            <div class="entry-summary ss"><p>邮件漏洞有很多站长为了保护自己的没有防御的服务器，都套上了CDN。虽然套CDN可以让网站不被轻易攻击拿下，但是稍有疏忽，就暴露了自己源站服务器的IP地址。为了使有人评论、评论被回复、评论待审核..的时候能用邮件通知自...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-09-21"><span class="separator">/</span>2021-09-21</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2016.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>250 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list3">
+                        <div class="entry-container">
+                            <div class="block-image feaimg">
+                                <a class="block-fea" href="https://www.fybk.cc/post/2015.html" title="利用快速收录域名给其他网站快速收录"><img class="lazy" src="static/picture/202109201632117194626006.png" alt="利用快速收录域名给其他网站快速收录" title="详细阅读：利用快速收录域名给其他网站快速收录"></a>
+                                <div class="entyr-icon"><i class="fa fa-image"></i></div>
+                            </div>
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2015.html">利用快速收录域名给其他网站快速收录</a></h2></header>
+                            <div class="entry-summary ss"><p>原理百度快速收录权限的域名提交站点快速收录，利用301技术重定向到未收录站点，实现快速收录实现方案1、在站点目录下面新建301目录比喻/301/目录下文件命名/index.php，将下面代码放置index.php文件...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-09-20"><span class="separator">/</span>2021-09-20</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2015.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>173 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list4">
+                        <div class="entry-container" style="padding-left: 0px  !important;">
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2014.html">免费让你的服务器加速3%-20%的方法</a></h2></header>
+                            <div class="entry-summary ss"><p>debian系统执行这个命令sed&nbsp;-i&nbsp;‘s/GRUB_CMDLINE_LINUX_DEFAULT=”/GRUB_CMDLINE_LINUX_DEFAULT=”noibrs&nbsp;noibpb&nbsp;nopti&nbsp;nospectre_v2...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-6.html"><span class="separator">/</span>系统技术</a>
+                                <time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2014.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>177 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list5">
+                        <div class="entry-container">
+                            <div class="block-image feaimg">
+                                <a class="block-fea" href="https://www.fybk.cc/post/2013.html" title="Nginx 防止 SQL 注入、XSS 攻击的实践配置方法"><img class="lazy" src="static/picture/202109151631717663427326.jpg" alt="Nginx 防止 SQL 注入、XSS 攻击的实践配置方法" title="详细阅读：Nginx 防止 SQL 注入、XSS 攻击的实践配置方法"></a>
+                                <div class="entyr-icon"><i class="fa fa-image"></i></div>
+                            </div>
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2013.html">Nginx 防止 SQL 注入、XSS 攻击的实践配置方法</a></h2></header>
+                            <div class="entry-summary ss"><p>有的时候发现网站访问缓慢，甚至出现 504 错误，通过 top -i 命令查看服务器负载发现负载数值飙升到 3.2 之多了，并且持续时间越来越频繁直至持续升高的趋势，还以为是被攻击了，对来访 IP 进行了阈值限制后效...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2013.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>146 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list6">
+                        <div class="entry-container">
+                            <div class="block-image feaimg">
+                                <a class="block-fea" href="https://www.fybk.cc/post/2012.html" title="宝塔面板解锁Nginx防火墙及网站监控报表"><img class="lazy" src="static/picture/202109151631717043380369.jpg" alt="宝塔面板解锁Nginx防火墙及网站监控报表" title="详细阅读：宝塔面板解锁Nginx防火墙及网站监控报表"></a>
+                                <div class="entyr-icon"><i class="fa fa-image"></i></div>
+                            </div>
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2012.html">宝塔面板解锁Nginx防火墙及网站监控报表</a></h2></header>
+                            <div class="entry-summary ss"><p>说明测试环境：Ubuntu / Debian / CentOS测试时间：2021-08-19宝塔版本： 7.7.0仅测试了Nginx防火墙及网站监控报表两款插件，其它收费插件未测试其它系统及版本未进行测试，请自行验证...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2012.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>114 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list7">
+                        <div class="entry-container" style="padding-left: 0px  !important;">
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2011.html">关闭宝塔强制登录提醒指令</a></h2></header>
+                            <div class="entry-summary ss"><p>宝塔这波强制绑定登录确实很恶心让很大一批用户流向了破解版但是正版终究是正版安全稳定自然比破解版更靠谱这里教大家如何关闭宝塔的强制登录提醒登录ssh在命令行输入以下指令即可关闭。rm&nbsp;-f&nbsp;/www/server/panel/data/bind.pl...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-09-15"><span class="separator">/</span>2021-09-15</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2011.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>115 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list featured auto-list wow fadeInDown" id="list8">
+                        <div class="featured-container">
+                            <header class="entry-header featitle"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2009.html"><span class="badge arc_v4">热文</span>我的世界斗罗大陆星盾斗罗[1.12.2][服务端]</a></h2></header>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-31.html"><span class="separator">/</span>PC服务器</a>
+                                <time datetime="2021-08-07"><span class="separator">/</span>2021-08-07</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2009.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>2057 阅读</span>
+                            </div>
+                            <div class="rowimg">
+                                <div class="col-4">
+                                    <div class="feaimg"><a class="feaimg-content" title="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" href="https://www.fybk.cc/post/2009.html"><img class="lazy" src="static/picture/202108071628336740228732.jpg" alt="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" title="详细阅读：我的世界斗罗大陆星盾斗罗[1.12.2][服务端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feaimg"><a class="feaimg-content" title="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" href="https://www.fybk.cc/post/2009.html"><img class="lazy" src="static/picture/202108071628336740455392.jpg" alt="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" title="详细阅读：我的世界斗罗大陆星盾斗罗[1.12.2][服务端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feaimg"><a class="feaimg-content" title="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" href="https://www.fybk.cc/post/2009.html"><img class="lazy" src="static/picture/202108071628336740288003.jpg" alt="我的世界斗罗大陆星盾斗罗[1.12.2][服务端]" title="详细阅读：我的世界斗罗大陆星盾斗罗[1.12.2][服务端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
+                                </div>
+                            </div>
+                            <div class="entry-summary feasum"><p>全网首发仅此一家无BUG，无后门全网最稳定斗罗端！感兴趣的服主可以直接入手，全网唯一最稳定的斗罗端！！！魂兽都有建模，独一无二，仅此一家！！！想看端具体内容的可以直接加已经在开的星盾斗罗服务器QQ群：10369114...</p></div>
+                        </div>
+                    </article>														<article class="post-list featured auto-list wow fadeInDown" id="list9">
+                        <div class="featured-container">
+                            <header class="entry-header featitle"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2008.html"><span class="badge arc_v4">热文</span>我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]</a></h2></header>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-30.html"><span class="separator">/</span>电脑游戏</a>
+                                <time datetime="2021-07-24"><span class="separator">/</span>2021-07-24</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2008.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>2399 阅读</span>
+                            </div>
+                            <div class="rowimg">
+                                <div class="col-4">
+                                    <div class="feaimg"><a class="feaimg-content" title="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" href="https://www.fybk.cc/post/2008.html"><img class="lazy" src="static/picture/202107241627115563496368.jpg" alt="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" title="详细阅读：我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feaimg"><a class="feaimg-content" title="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" href="https://www.fybk.cc/post/2008.html"><img class="lazy" src="static/picture/202107241627115565858835.jpg" alt="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" title="详细阅读：我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feaimg"><a class="feaimg-content" title="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" href="https://www.fybk.cc/post/2008.html"><img class="lazy" src="static/picture/202107241627115566169993.jpg" alt="我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]" title="详细阅读：我的世界缘启斗罗服务器[1.12.2][电脑端][手机端]"></a><div class="entyr-icon"><i class="fa fa-image"></i></div></div>
+                                </div>
+                            </div>
+                            <div class="entry-summary feasum"><p>有效状态&nbsp; &nbsp; &nbsp; 长期开放支持版本&nbsp; &nbsp; &nbsp; 1.12.2盈利模式&nbsp; &nbsp; &nbsp; 公益服务器 » “无条件”捐助游戏模式&nbs...</p></div>
+                        </div>
+                    </article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list10">
+                        <div class="entry-container">
+                            <div class="block-image feaimg">
+                                <a class="block-fea" href="https://www.fybk.cc/post/2007.html" title="ContOS搭建我的世界PE服务器"><img class="lazy" src="static/picture/202107161626402309367713.jpg" alt="ContOS搭建我的世界PE服务器" title="详细阅读：ContOS搭建我的世界PE服务器"></a>
+                                <div class="entyr-icon"><i class="fa fa-image"></i></div>
+                            </div>
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2007.html"><span class="badge arc_v4">热文</span>ContOS搭建我的世界PE服务器</a></h2></header>
+                            <div class="entry-summary ss"><p>yum&nbsp;install&nbsp;screen#新建窗口screen&nbsp;-S&nbsp;mc#配置mkdir&nbsp;/data/mcpecd&nbsp;/data/mcpe...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-07-16"><span class="separator">/</span>2021-07-16</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2007.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>1395 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg auto-list wow fadeInDown" id="list11">
+                        <div class="entry-container">
+                            <div class="block-image feaimg">
+                                <a class="block-fea" href="https://www.fybk.cc/post/2006.html" title="宝塔Nginx编译安装headers_more模块"><img class="lazy" src="static/picture/202107161626402190526873.png" alt="宝塔Nginx编译安装headers_more模块" title="详细阅读：宝塔Nginx编译安装headers_more模块"></a>
+                                <div class="entyr-icon"><i class="fa fa-image"></i></div>
+                            </div>
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2006.html"><span class="badge arc_v4">热文</span>宝塔Nginx编译安装headers_more模块</a></h2></header>
+                            <div class="entry-summary ss"><p>前言nginx 的 headers_more模块用于添加/修改/清除/请求/响应头的模块.该模块主要有 4 个指令:more_set_headers 用于 添加、修改、清除 响应头more_clear_headers...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-07-16"><span class="separator">/</span>2021-07-16</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2006.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>1237 阅读</span>
+                            </div>
+                        </div>
+                    </article>														<article class="post-list blockimg blocktext auto-list wow fadeInDown" id="list12">
+                        <div class="entry-container" style="padding-left: 0px  !important;">
+                            <header class="entry-header"><h2 class="entry-title"><a href="https://www.fybk.cc/post/2005.html"><span class="badge arc_v4">热文</span>CURL验证代理池和使用代理</a></h2></header>
+                            <div class="entry-summary ss"><p>使用代理//初始化&nbsp;curl&nbsp;乱七八糟就不写了$arrip&nbsp;=&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&#39;xxx.x.xx.x:80&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&#39;xx...</p></div>
+                            <div class="entry-meta fea-meta">
+                                <a href="https://www.fybk.cc/author-1.html"><img src="static/picture/ff2aa84938574d27ae330c2bd5491d3c.gif" alt="枫叶" class="avatar avatar-140 photo" height="25" width="25">枫叶</a>
+                                <a class="meta-cate" href="https://www.fybk.cc/category-4.html"><span class="separator">/</span>技术分享</a>
+                                <time datetime="2021-07-16"><span class="separator">/</span>2021-07-16</time>
+                                <a class="meta-viewnums" href="https://www.fybk.cc/post/2005.html#comments"><span class="separator">/</span>0 评论</a>			<span class="meta-viewnums"><span class="separator">/</span>1248 阅读</span>
+                            </div>
+                        </div>
+                    </article>								</div>				<footer class="pagination wow fadeInDown">
+                <ul><li class="active"><span>1</span></li>
+                    <li><a href="https://www.fybk.cc/page_2.html" title="第2页" >2</a></li>
+                    <li><a href="https://www.fybk.cc/page_3.html" title="第3页" >3</a></li>
+                    <li><a href="https://www.fybk.cc/page_2.html" title="下一页" class="c-nav next ease a1">下一页</a></li>
+                    <li><a href="https://www.fybk.cc/page_144.html" class="c-nav ease moye" title="末页">末页 </a></li>
+                    <li><span>共 144 页</span></li>
+                </ul>
+                <div id="loadmore" class="load-more-wrap loadmore"><a class="load-more" href="https://www.fybk.cc/page_2.html" id="post_over">点击查看更多</a></div>				</footer>			</div>
+        </div><!--main fl-->
+        <div class="side fr">
+            <section class="widget wow fadeInDown" id="21321321">
+                <div class="widget-box 21321321"><a href="https://api.tudoumc.com/jx/demo/" rel="bookmark"><img src="static/picture/20211126113052163789745218417.gif"></a></div>
+            </section><section class="widget wow fadeInDown" id="side_con">
+            <h3 class="widget-title"><i class="fa fa-side_con"></i><span>热评文章</span></h3>
+            <ul class="widget-box side_con"><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1922.html" title="PHPMailer发送邮件失败：SMTP connect failed（评论：0次）">PHPMailer发送邮件失败：SMTP connect failed</a><p>最近在写一个通过发送邮件重置密码的功能，在本地调试的好好的，结果上...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1915.html" title="小弟以前开idc赚钱的日子，不能忘了分享老哥推荐的法子（评论：0次）">小弟以前开idc赚钱的日子，不能忘了分享老哥推荐的法子</a><p>小弟多年前想开一个loc云赚钱，但苦于没有什么思路，结果几个老哥为...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/2011.html" title="关闭宝塔强制登录提醒指令（评论：0次）">关闭宝塔强制登录提醒指令</a><p>宝塔这波强制绑定登录确实很恶心让很大一批用户流向了破解版但是正版终...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1924.html" title="Kangle CDN网站被关：公司多名高管被抓（评论：0次）">Kangle CDN网站被关：公司多名高管被抓</a><p>圈内小有名气的CDN系统服务商Kangle CDN公司最近踩雷了，...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1927.html" title="zblog升级到1.7.0后系统前台和后台无法访问解决办法（评论：0次）">zblog升级到1.7.0后系统前台和后台无法访问解决办法</a><p>升级到最新的zblog1.7.0后很多人都无法访问后台或者前台，目...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1933.html" title="Cloudflare 对外开放的端口列表（评论：0次）">Cloudflare 对外开放的端口列表</a><p>Cloudflare可用回源端口，在使用宝塔的服务器，配置了CF的...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1934.html" title="宝塔NGINX网站只允许Cloudflare CDN的IP访问方法（评论：0次）">宝塔NGINX网站只允许Cloudflare CDN的IP访问方法</a><p>对于使用Cloudflare的CDN的站长，需要设置服务器只允许来...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1984.html" title="cloudflare最新漏洞，使用cloudflare可直接获取服务器源ip！！！（评论：0次）">cloudflare最新漏洞，使用cloudflare可直接获取服务器源ip！！！</a><p>使用cloudflare的站长们！！！大事不好了！！！使用clou...</p></li><li><span class="coll-commnums">0 评论</span><a class="coll-title" href="https://www.fybk.cc/post/1985.html" title="cnpm - 解决 &quot; cnpm : 无法加载文件 C:\Users\93457\AppData\Roaming\npm\cnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息 。。。 &quot;（评论：0次）">cnpm - 解决 &quot; cnpm : 无法加载文件 C:\Users\93457\AppData\Roaming\npm\cnpm.ps1，因为在此系统上禁止运行脚本。有关详细信息 。。。 &quot;</a><p>1.在win10 系统中搜索框 输入 Windos PowerSh...</p></li></ul>
+        </section><section class="widget wow fadeInDown" id="divComments">
+            <h3 class="widget-title"><i class="fa fa-divComments"></i><span>最新留言</span></h3>
+            <ul class="widget-box divComments"><div class="comment-item">
+                <div class="comment-meta">
+                    <div class="meta-item">
+                        <span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/fde15775660a49ffa1821fb031fa32b3.gif)"></i></span>土豆MC		<span class="autlv lay-0">普通用户</span></div>
+                    <span class="comment-views">09月17日</span>
+                </div>
+                <div class="comment-content">
+                    <p><a href="https://www.fybk.cc/187.html#cmt336" title="《友链申请》">已添加贵站，麻烦添加友联哦，谢谢！！名称："土豆MC"URL：https://www.tudoumc.com介</a></p>
+                </div>
+                <h4><a href="https://www.fybk.cc/187.html#cmt336"><i class="fa fa-file-text-o"></i>《友链申请》</a></h4>
+            </div><div class="comment-item">
+                <div class="comment-meta">
+                    <div class="meta-item">
+                        <span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/a7f24f0e8fcb4511bd676ee65a3b5cd7.gif)"></i></span>zhujh		<span class="autlv lay-0">普通用户</span></div>
+                    <span class="comment-views">08月06日</span>
+                </div>
+                <div class="comment-content">
+                    <p><a href="https://www.fybk.cc/post/1340.html#cmt326" title="《我的世界枫叶服主助手工具Ver1.0》">买了在哪下载</a></p>
+                </div>
+                <h4><a href="https://www.fybk.cc/post/1340.html#cmt326"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手工具Ver1.0》</a></h4>
+            </div><div class="comment-item">
+                <div class="comment-meta">
+                    <div class="meta-item">
+                        <span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/765a127309c4425fa53214732569d0cc.gif)"></i></span>zzy		<span class="autlv lay-0">普通用户</span></div>
+                    <span class="comment-views">06月24日</span>
+                </div>
+                <div class="comment-content">
+                    <p><a href="https://www.fybk.cc/post/1101.html#cmt280" title="《我的世界枫叶服主助手Ver1.0》">有点懵，是不是要自己搞一个服务端才能用？</a></p>
+                </div>
+                <h4><a href="https://www.fybk.cc/post/1101.html#cmt280"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手Ver1.0》</a></h4>
+            </div><div class="comment-item">
+                <div class="comment-meta">
+                    <div class="meta-item">
+                        <span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/765a127309c4425fa53214732569d0cc.gif)"></i></span>zzy		<span class="autlv lay-0">普通用户</span></div>
+                    <span class="comment-views">06月24日</span>
+                </div>
+                <div class="comment-content">
+                    <p><a href="https://www.fybk.cc/post/1101.html#cmt278" title="《我的世界枫叶服主助手Ver1.0》">作弊了是不是就要封了？</a></p>
+                </div>
+                <h4><a href="https://www.fybk.cc/post/1101.html#cmt278"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手Ver1.0》</a></h4>
+            </div><div class="comment-item">
+                <div class="comment-meta">
+                    <div class="meta-item">
+                        <span class="comment-avatar"><i class="thumb" style="background-image:url(static/images/765a127309c4425fa53214732569d0cc.gif)"></i></span>zzy		<span class="autlv lay-0">普通用户</span></div>
+                    <span class="comment-views">06月24日</span>
+                </div>
+                <div class="comment-content">
+                    <p><a href="https://www.fybk.cc/post/1101.html#cmt276" title="《我的世界枫叶服主助手Ver1.0》">斗罗服可以用吗？</a></p>
+                </div>
+                <h4><a href="https://www.fybk.cc/post/1101.html#cmt276"><i class="fa fa-file-text-o"></i>《我的世界枫叶服主助手Ver1.0》</a></h4>
+            </div></ul>
+        </section>		</div>
+    </div><!--row-->
+
+    <footer class="site-footer footer">
+        <div class="site-info clearfix">
+            <div class="container">
+                <div class="footer-left"><!--底部左边-->
+                    <div class="footer-l-btm" style="margin-top: 20px;">
+                        <p class="jubao">本站的内容仅供参考学习分享使用</p>
+                        <p class="jubao">贵州五丰商贸有限公司</p>
+                        <p class="jubao"><a href="https://beian.miit.gov.cn">黔ICP备2023001119</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="backtop" class="backtop">
+            <div class="bt-box top"><i class="fa fa-angle-up fa-2x"></i></div>
+            <div class="bt-box qq"><a href="tencent://message/?uin=1610775113&site=qq&Menu=yes" rel="nofollow" target="_blank" title="企鹅号"><i class="fa fa-qq fa-2x"></i></a></div>		<div class="bt-box bottom"><i class="fa fa-angle-down fa-2x"></i></div>
+        </div>
+        <script src="static/js/custom.js"></script>
+        <script src="static/js/wow.min.js"></script>
+        <script src="static/js/prettify.js" type="text/javascript"></script>
+    </footer>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6c822f2f79017ce0',m:'MOb5lJu_GYs2IX9QtDKHvYnnRkNpCrM51kq8Iknd720-1641275374-0-AYf48/6Efd9Up6xbHxFBhN9oAPrZmmadV5kv1xk7lMz9dY8Sks9KP0TNjy0YDHvKf8kQ+QPikEG0WvParaFZxXJrSTZACgRdWhywQgVAJcZm7lHEsTtXgbHgNlbA25UB4A==',s:[0x9d1d78ebc5,0xf1ff20a49c],u:'/cdn-cgi/challenge-platform/h/g'}})();</script><script defer src="static/js/b02a54bca0b34eb586395efe8ce6ef61.js" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6c822f2f79017ce0","version":"2021.12.0","r":1,"token":"776870bd5e914f9693a2a32d28cef7a8","si":100}' crossorigin="anonymous"></script>
 </body>
 </html><!--57.24 ms , 19 query , 1689kb memory , 0 error-->
